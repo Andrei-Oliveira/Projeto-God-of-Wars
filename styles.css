@@ -1,0 +1,347 @@
+* {
+    margin:0px;
+    padding:0px ;
+    box-sizing: border-box ;
+    font-family: "inter", sans-serif;
+}
+
+body {
+    width: 100%;
+    background: no-repeat url("./img/background.svg");
+    background-color: #19191b;
+    background-size: 106%;
+    padding: 0px 40px;
+}
+
+header {
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 20px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+}
+
+.nav-link {
+    font-family: "Cinzel", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    color:#fff;
+    position: relative;
+    cursor: pointer;
+}
+.nav-link::after {
+    content:"";
+    width: 0px;
+    height: 3px;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 2px;
+    left:0px;
+    background-color: #fff;
+    transition: 0.3s;
+    text-underline-position: under;
+
+}
+
+.nav-link:hover::after{
+ width: 100%;
+}
+
+.btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width:176px ;
+    height: 56px;
+    background-color: #5892d2;
+    border-radius: 5px;
+    font-family: "Cinzel", sans-serif;
+    font-weight: 700px;
+    font-size: 18px;
+    line-height: 19px;
+    color: #16161a;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.btn-primary:hover {
+
+    opacity: 0.7;
+}
+
+.first-section {
+    margin-top: 20px;
+
+}
+h1 {
+    font-family: "Cinzel", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 90%;
+    color:#fff
+
+
+}
+P {
+    margin-top: 16px;
+    font-family: "Inter" sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 160%;
+color: #afafaf;
+
+}
+
+.container-action {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.bnt-secundary {
+
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width:176px ;
+    height: 56px;
+    background-color: #5892d2;
+    border-radius: 5px;
+    font-family: "Cinzel", sans-serif;
+    font-weight: 700px;
+    font-size: 18px;
+    line-height: 19px;
+    color: #16161a;
+    transition: 0.3s;
+    cursor: pointer;
+    text-align: justify;
+
+}
+
+.bnt-secundary:hover {
+
+    opacity: 0.7;
+}
+
+.bnt-tree {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 140px;
+    height: 56px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.5;
+    font-family: "Cinzel", sans-serif;
+    font-weight: 700px;
+    font-size: 14px;
+    line-height: 19px;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+
+}
+.container-video {
+    display:inline;
+    justify-content:end;
+    padding-right: 170px;
+}
+video {
+    width:400px ;
+    height: 208px;
+    border:none;
+    border-radius: 10px;
+    margin-top: 50px;
+
+}
+
+.seccond.section {
+    margin-top: 150px;
+    text-align: center;
+
+}
+
+h2 {
+    font-family:"Cinzel", sans-serif;
+    font-weight: 700px;
+    color:#fff;
+    font-size: 42px;
+    text-align: center;
+    margin-top:240px ;
+}
+
+.container-carousel1{
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.container-itens{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.carousel-item {
+    width: 250px;
+    height: 360px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    opacity: 0.6;
+    transition: 0.3s;
+    margin-top: 100px;
+}
+
+.carousel-item:hover{
+    opacity:1;
+}
+.carousel-item::after{
+   content: "";
+   width: 100%;
+   height: 80%;
+   background: #27272e;
+   position:absolute;
+   bottom: 0px;
+   left: 0px;
+   z-index: -1;
+   transition: 0.3s;
+   
+}
+
+.carousel-item:hover::after{
+border: 1px solid#5092d2;
+}
+
+.item{
+    width: 250px;
+    height: 360px;
+}
+
+.item-name{
+
+    position:absolute;
+    bottom: 12px;
+    font-family:"Cinzel", sans-serif;
+    font-weight: 700px;
+    color:#fff;
+    font-size: 32px;
+    line-height: 43px;
+
+}
+
+.arrows:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.third-section{
+    margin-top: 50px;
+    background: no-repeat url("./img/background-2.svg");
+    width: 100%;
+    height: 700px;
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-size: 100%;
+
+}
+
+.container-photos{
+ display:flex ;
+ flex-direction: column;
+ gap: 12px;
+
+}
+
+.img{
+    width: 320px;
+
+}
+.container-description{
+
+    width: 500px;
+    margin-right: 150px;
+    text-align:left;
+}
+.text1{
+    font-family:"Cinzel", sans-serif;
+    font-weight: 700px;
+    font-size: 32px;
+    color:#fff;
+    width: 500px;
+    margin-right: 150px;
+    text-align:left;
+}
+
+.text {
+ font-weight: 400px;
+ font-size: 16px;
+ line-height: 160%;
+ color: #fff;
+ opacity: 0.7;
+
+}
+
+.fourth-section{
+margin-top: 800px;
+margin-bottom: 100px;
+
+}
+
+.container-weapons{
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    gap: 24px;
+}
+
+.weapon{
+    display: flex;
+    align-items: end;
+    background: #27272e;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.weapon-description{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.weapon-description h3{
+    font-family:"Cinzel", sans-serif;
+    font-weight: 700px;
+    color:#fff;
+    font-size: 32px;
+    line-height: 43px; 
+}
+
+.weapon-description p{
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.img-wepon{
+    height: 350px;
+    width: 250px;
+}
